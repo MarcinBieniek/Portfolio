@@ -1,9 +1,9 @@
-import React from 'react'
+import styles from './Intro.module.scss';
 
 const Intro = () => {
   return (
-    <div>
-      
+    <div className={styles.container}>
+      asd
     </div>
   )
 }
