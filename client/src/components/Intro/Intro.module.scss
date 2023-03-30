@@ -3,6 +3,7 @@
 .intro {
   background-color: $background-grey;
   width: 100%;
+  height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,12 @@
 
   .text {
     width: 70%;
+    max-height: 100%;
     text-align: center;
+    scrollbar-width: none; // for firefox;
+    &::-webkit-scrollbar {
+      display: none; // for safari, mozilla, etc;
+    }
 
     span{
       font-size: 90px;
@@ -48,7 +54,7 @@
     display: flex;
     width: 400px;
     height: 70px;
-    margin-top: 20px;
+    margin-top: 50px;
     cursor: pointer;
 
     .button1 {

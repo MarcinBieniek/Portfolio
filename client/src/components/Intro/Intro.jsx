@@ -17,7 +17,7 @@ const Intro = () => {
         <TerminalIcon className={styles.icon}/>
         <span className={styles.gray}>developer</span><br />
 
-        <span className={styles.gray}>Specialized</span>
+        <span className={styles.gray}>specialized</span>
         <img 
           className={styles.logo}
           src={`${process.env.PUBLIC_URL}/images/mern.png`} 
