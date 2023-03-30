@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact'; 
 import { useState } from 'react';
 import Menu from './components/Menu/Menu';
+import About from './components/About/About';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className={styles.sections}>
         <Intro />
+        <About />
         <Portfolio />
         <Contact />
       </div>
