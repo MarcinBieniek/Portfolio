@@ -1,9 +1,10 @@
 import styles from './Topbar.module.scss';
 import EmailIcon from '@mui/icons-material/Email';
+import clsx from 'clsx';
 
-const Topbar = () => {
+const Topbar = ({menuOpen, setMenuOpen}) => {
   return (
-    <div className={styles.container}>
+    <div className={clsx(styles.container, menuOpen && styles.active)}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
           <a href="#intro">Marcin.</a>
@@ -12,9 +13,11 @@ const Topbar = () => {
           <EmailIcon />
           <a href="mailto:hello@marcindev.com">hello@marcindev.com</a>
         </div>
-        <div className={styles.rigth}>
-          <div className={styles.hamburger}>
-            
+        <div className={styles.right}>
+          <div className={styles.hamburger} onClick={()=>setMenuOpen(!menuOpen)}>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
           </div>
         </div>
       </div>
