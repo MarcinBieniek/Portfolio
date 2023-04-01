@@ -4,6 +4,7 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 const About = () => {
+  
   return (
     <div className={styles.about} id="about">
       <div className={styles.wrapper}>
@@ -55,15 +56,8 @@ const About = () => {
               />
               <p>Dziś jestem skoncentrowany na rozwijaniu moich umiejętności i znalezieniu pracy jako web developer. To dopiero początek, jest tak wiele do nauczenia.</p>    
             </li>
-            <li>
-              <img
-                className={styles.icon}
-                src={`${process.env.PUBLIC_URL}/images/star.svg`} 
-                alt="Main image"
-              />
-              <p>Jeśli jesteś zainteresowany współpracą, bardzo proszę o kontakt.</p>    
-            </li>
           </ul>
+          
           <div className={styles.buttons}>
             <a href="https://www.linkedin.com" className={styles.button}>
               <LinkedInIcon className={styles.icon}/>
