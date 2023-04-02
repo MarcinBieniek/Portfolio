@@ -7,17 +7,17 @@ import { portfolio } from '../../data/simpleData';
 const Portfolio = () => {
 
   const [selected, setSelected] = useState('all')
-  const [filteredProjects, setFilteredProjects] = useState('')
+  const [filteredProjects, setFilteredProjects] = useState([])
 
   console.log('selected is ', selected)
-  console.log(filteredProjects)
+  console.log('filtered', filteredProjects)
+
+  
 
   useEffect(() => {
-
     setFilteredProjects(
       portfolio.filter(project => project.tag.includes(selected))
     )
-
   }, [selected])
 
   return (
@@ -42,126 +42,56 @@ const Portfolio = () => {
         </ul>
       </div>
 
-      <div className={styles.item}>
-        <div className={styles.image}>
-          <img 
-            src={`${process.env.PUBLIC_URL}/images/portfolio/prospero.png`} 
-            alt="Prospero Store"
-          />
-          <h3>View in browser</h3>
-        </div>
-        <div className={styles.description}>
-          <div className={styles.buttons}>
-            <div className={styles.react_button}>
-              <span>React</span>
-            </div>
-            <div className={styles.nodejs_button}>
-              <span>NodeJS</span>
-            </div>
-            <div className={styles.express_button}>
-              <span>Express</span>
-            </div>
-            <div className={styles.mongodb_button}>
-              <span>MongoDB</span>
-            </div>
-          </div>
-          <div className={styles.content}>
-            <h1>E-commerce service</h1>
-            <span><b>Features:</b> Product list (add to favorite, rate, add to cart), product personalization, cart component, user registration & login, send order, user page & orders list.</span><br/>
-            <span><b>Last update:</b> March 2023</span><br/>
-            <span><b>Actually working on:</b> Online payment implementation</span>
-          </div>
-          <div className={styles.summary}>
-            <div className={styles.button}>
-              <span>View in browser</span>
-            </div>
-            <div className={styles.button}>
-              <span>Github</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className={styles.list}>
 
-      <div className={styles.item}>
-        <div className={styles.image}>
-          <img 
-            src={`${process.env.PUBLIC_URL}/images/portfolio/prospero.png`} 
-            alt="Prospero Store"
-          />
-          <h3>View in browser</h3>
-        </div>
-        <div className={styles.description}>
-          <div className={styles.buttons}>
-            <div className={styles.react_button}>
-              <span>React</span>
-            </div>
-            <div className={styles.nodejs_button}>
-              <span>NodeJS</span>
-            </div>
-            <div className={styles.express_button}>
-              <span>Express</span>
-            </div>
-            <div className={styles.mongodb_button}>
-              <span>MongoDB</span>
+        { filteredProjects.map((item) => (
+          <div className={styles.project}>
+            <a href={item.link} className={styles.image}>
+              <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="" />
+              <p>View in browser</p>
+            </a>
+            <div className={styles.content}>
+              <div className={styles.buttons}>
+                { item.tag.includes('react') &&
+                  <div className={styles.react_button}>
+                    <span>React</span>
+                  </div>  
+                }
+                { item.tag.includes('nodejs') &&
+                  <div className={styles.nodejs_button}>
+                    <span>NodeJS</span>
+                  </div>
+                }
+                { item.tag.includes('express') &&
+                  <div className={styles.express_button}>
+                    <span>Express</span>
+                  </div>
+                }
+                { item.tag.includes('mongodb') &&
+                  <div className={styles.mongodb_button}>
+                    <span>MongoDB</span>
+                  </div>
+                }
+                { item.tag.includes('bootstrap') &&
+                  <div className={styles.bootstrap_button}>
+                    <span>Bootstrap</span>
+                  </div>
+                }
+              </div>
+              <h3>{item.title}</h3>
+              <p><b>Details:</b> {item.details}</p>
+              <div className={styles.summary}>
+                <a href={item.link} className={styles.button}>
+                  <span>View in browser</span>
+                </a>
+                <a href={item.github} className={styles.button}>
+                  <span>Github</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className={styles.content}>
-            <h1>E-commerce service</h1>
-            <span><b>Features:</b> Product list (add to favorite, rate, add to cart), product personalization, cart component, user registration & login, send order, user page & orders list.</span><br/>
-            <span><b>Last update:</b> March 2023</span><br/>
-            <span><b>Actually working on:</b> Online payment implementation</span>
-          </div>
-          <div className={styles.summary}>
-            <div className={styles.button}>
-              <span>View in browser</span>
-            </div>
-            <div className={styles.button}>
-              <span>Github</span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-
-      <div className={styles.item}>
-        <div className={styles.image}>
-          <img 
-            src={`${process.env.PUBLIC_URL}/images/portfolio/prospero.png`} 
-            alt="Prospero Store"
-          />
-          <h3>View in browser</h3>
-        </div>
-        <div className={styles.description}>
-          <div className={styles.buttons}>
-            <div className={styles.react_button}>
-              <span>React</span>
-            </div>
-            <div className={styles.nodejs_button}>
-              <span>NodeJS</span>
-            </div>
-            <div className={styles.express_button}>
-              <span>Express</span>
-            </div>
-            <div className={styles.mongodb_button}>
-              <span>MongoDB</span>
-            </div>
-          </div>
-          <div className={styles.content}>
-            <h1>E-commerce service</h1>
-            <span><b>Features:</b> Product list (add to favorite, rate, add to cart), product personalization, cart component, user registration & login, send order, user page & orders list; Bootstrap grid, MaterialUI, Framer Motion animations</span><br/>
-            <span><b>Last update:</b> March 2023</span><br/>
-            <span><b>Actually working on:</b> Online payment implementation</span>
-          </div>
-          <div className={styles.summary}>
-            <div className={styles.button}>
-              <span>View in browser</span>
-            </div>
-            <div className={styles.button}>
-              <span>Github</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   )
 }

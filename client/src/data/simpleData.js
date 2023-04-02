@@ -28,35 +28,20 @@ export const categories = [
 export const portfolio = [
   {
     id: 1,
-    tag: ['react', 'nodejs'],
+    tag: ['all', 'react', 'nodejs', 'express', 'mongodb', 'bootstrap'],
     title: 'E-commerce service',
-    features: 'Product list (add to favorite, rate, add to cart), product personalization, cart component, user registration & login, send order, user page & orders list.',
-    update: 'March 2023',
-    todo: '',
-    img: '',
-    link: '',
-    github: ''
+    details: 'User registration, login and profile. Product personalization, cart, order process. Orders history.',
+    img: '/images/portfolio/prospero.png',
+    link: 'https://prosperostore.marcinbieniek.repl.co/',
+    github: 'https://github.com/MarcinBieniek/ProsperoStore'
   },
   {
     id: 2,
-    tag: 'react',
-    title: 'E-commerce service',
-    features: 'Product list (add to favorite, rate, add to cart), product personalization, cart component, user registration & login, send order, user page & orders list.',
-    update: 'March 2023',
-    todo: '',
-    img: '',
+    tag: ['all', 'react'],
+    title: 'Portfolio web',
+    details: 'Porfolio web with snap-scroll effect. Categories filter, contact form. Projects data mapped from db.',
+    img: '/images/portfolio/portfolio.png',
     link: '',
-    github: ''
+    github: 'https://github.com/MarcinBieniek/Portfolio'
   },
-  {
-    id: 3,
-    tag: ['nodejs', 'express'],
-    title: 'E-commerce service',
-    features: 'Product list (add to favorite, rate, add to cart), product personalization, cart component, user registration & login, send order, user page & orders list.',
-    update: 'March 2023',
-    todo: '',
-    img: '',
-    link: '',
-    github: ''
-  }
 ] 
