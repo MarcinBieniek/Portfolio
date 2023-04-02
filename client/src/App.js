@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import { useState } from 'react';
 import Menu from './components/Menu/Menu';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,25 @@
+@import '../../styles/styles.scss';
+
+.footer {
+  height: 80px;
+  background-color: $black;
+  color: white;
+  font-size: 14px;
+  
+  .wrapper {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .right {
+      text-decoration: none;
+      
+      .icon {
+        color: white;
+        padding-left: 10px;
+      }
+    }
+  }
+}

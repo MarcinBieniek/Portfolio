@@ -13,11 +13,8 @@ const Contact = () => {
     setSend(true)
     setTimeout(() => {
       setSend(false)
-         }, 3000);
+         }, 5000);
   }, [state.submitting])
-
-  console.log('state is', state)
-  console.log('send is', send)
 
   return (
     <div className={styles.contact} id="contact">
