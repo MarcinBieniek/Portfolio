@@ -11,10 +11,10 @@ const Footer = () => {
           <span>Coded in React by Marcin.</span>
         </div>
         <div className={styles.right}>
-          <a href="https://www.linkiedin.com">
+          <a href="https://www.linkedin.com/in/marcin-bieniek-617565271">
             <LinkedInIcon className={styles.icon}/>
           </a>
-          <a href="https://www.github.com">
+          <a href="https://github.com/MarcinBieniek?tab=repositories">
             <GitHubIcon className={styles.icon}/>
           </a>
         </div>

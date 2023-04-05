@@ -1,5 +1,6 @@
 import styles from './Intro.module.scss';
 import TerminalIcon from '@mui/icons-material/Terminal';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Intro = () => {
   return (
@@ -32,6 +33,12 @@ const Intro = () => {
         </a>
         <a href="#portfolio" className={styles.button2}>
           <div>My portfolio</div>
+        </a>
+      </div>
+
+      <div className={styles.arrow}>
+        <a href="#about">
+          <ExpandMoreIcon className={styles.icon} />
         </a>
       </div>
     </div>

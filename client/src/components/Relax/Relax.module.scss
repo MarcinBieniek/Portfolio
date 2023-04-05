@@ -1,0 +1,60 @@
+@import '../../styles/styles.scss';
+
+.relax {
+  width: 100%;
+  background-color: $background-grey;
+  padding-bottom: 30px;
+
+  .header {
+    text-align: center;
+    padding: 10px 0px;
+    flex-direction: column;
+
+    h1 {
+      font-size: 48px;
+      margin: 20px 0px 0px 0px;
+    }
+  }
+
+  .wrapper {
+    padding: 0px 30px;  
+    display: flex;
+
+    .left {
+      margin-top: 10px;
+      flex: 6;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+    }
+    .right {
+      flex: 6;
+
+      iframe {
+        margin: 20px;
+      }
+    }
+
+  }
+}
+
+// Media queries
+
+@media (max-width: 576px) {
+  .relax {
+    padding-top: 70px;
+    .wrapper {
+      padding: 0px 10px;
+      flex-direction: column;
+    }
+  }
+}
+

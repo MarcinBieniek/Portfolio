@@ -46,7 +46,11 @@ const Portfolio = () => {
           <div className={styles.project}>
             <a href={item.link} className={styles.image}>
               <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="" />
-              <p>View in browser</p>
+              {item.link === '' ?
+                <p>You are here</p>
+                :
+                <p>View in browser</p>
+              }
             </a>
             <div className={styles.content}>
               <div className={styles.buttons}>
@@ -85,7 +89,11 @@ const Portfolio = () => {
               <p><b>Details:</b> {item.details}</p>
               <div className={styles.summary}>
                 <a href={item.link} className={styles.button}>
-                  <span>View in browser</span>
+                  {item.link === '' ?
+                    <span>You are here</span>
+                    :
+                    <span>View in browser</span>
+                  }
                 </a>
                 <a href={item.github} className={styles.button}>
                   <span>Github</span>

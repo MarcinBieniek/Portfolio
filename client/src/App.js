@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Menu from './components/Menu/Menu';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Relax from './components/Relax/Relax';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Portfolio />
         <Contact />
+        <Relax />
         <Footer />
       </div>
     </div>

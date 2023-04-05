@@ -23,12 +23,16 @@ const Menu = ({menuOpen, setMenuOpen}) => {
           <a href="#contact">Contact</a>
           <span>04</span>
         </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#relax">Relax</a>
+          <span>05</span>
+        </li>
       </ul>
       <div className={styles.icons}>
-        <a href="https://www.linkiedin.com">
+        <a href="https://www.linkedin.com/in/marcin-bieniek-617565271">
           <LinkedInIcon className={styles.icon}/>
         </a>
-        <a href="https://www.github.com">
+        <a href="https://github.com/MarcinBieniek?tab=repositories">
           <GitHubIcon className={styles.icon}/>
         </a>
       </div>

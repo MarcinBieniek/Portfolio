@@ -2,7 +2,7 @@ import styles from './About.module.scss';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const About = () => {
   
   return (
@@ -66,7 +66,7 @@ const About = () => {
           </ul>
           
           <div className={styles.buttons}>
-            <a href="https://www.linkedin.com" className={styles.button}>
+            <a href="https://www.linkedin.com/in/marcin-bieniek-617565271" className={styles.button}>
               <LinkedInIcon className={styles.icon}/>
               <span>See my profile</span>
             </a>
@@ -80,7 +80,6 @@ const About = () => {
               <RemoveRedEyeIcon className={styles.icon}/>
               <span>See my works</span>
             </a>
-
           </div>
         </div>
       </div>
