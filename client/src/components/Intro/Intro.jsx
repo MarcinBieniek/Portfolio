@@ -17,15 +17,15 @@ const Intro = () => {
         <TerminalIcon className={styles.icon}/>
         <span className={styles.gray}>developer</span><br />
 
-        <span className={styles.gray}>specialized</span>
+        <span className={styles.gray}>learning</span>
         <img 
           className={styles.logo}
           src={`${process.env.PUBLIC_URL}/images/mern.png`} 
           alt="Mern logo"
         />
-        <span> in Mern Stack</span><br />
-
+        <span> Mern Stack</span><br />
       </div>
+      
       <div className={styles.buttons}>
         <a href="#about" className={styles.button1}>
           <div >About me</div>

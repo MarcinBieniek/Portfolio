@@ -20,9 +20,13 @@ export const categories = [
     title: "MongoDB",
   },
   {
+    id: "javascript",
+    title: "JavaScript",
+  },
+  {
     id: "bootstrap",
     title: "Bootstrap",
-  }
+  },
 ];
 
 export const portfolio = [
@@ -43,5 +47,14 @@ export const portfolio = [
     img: '/images/portfolio/portfolio.png',
     link: '',
     github: 'https://github.com/MarcinBieniek/Portfolio'
+  },
+  {
+    id: 3,
+    tag: ['all', 'javascript'],
+    title: 'Simple streaming service',
+    details: 'VanillaJS. Streaming service with audio player, songs list, search page and song draw page.',
+    img: '/images/portfolio/streaming.png',
+    link: 'https://streaming-service.herokuapp.com/',
+    github: 'https://github.com/MarcinBieniek/SimpleStreamingService'
   },
 ] 

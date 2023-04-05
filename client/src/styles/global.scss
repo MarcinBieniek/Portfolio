@@ -2,14 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
     margin: 0;
     font-family: 'Bai Jamjuree', sans-serif;
-    //font-family: 'Bebas Neue', cursive;
-    //font-family: 'Manrope', sans-serif;
     //background-color: $background-grey;
     overflow-x: hidden;
-    //transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }

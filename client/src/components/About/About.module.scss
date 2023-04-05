@@ -1,6 +1,7 @@
 @import '../../styles/styles.scss';
 
 .about {
+  min-height: calc(100vh - 70px);
   width: 100%;
   background-color: $background-grey;
   padding-bottom: 70px;
@@ -19,7 +20,7 @@
         padding: 40px 0px;
         
         h1 {
-          font-size: 56px;
+          font-size: 50px;
           line-height: 64px;
           scrollbar-width: none; // for firefox;
           &::-webkit-scrollbar {
@@ -33,7 +34,7 @@
       flex: 8;
 
       ul {
-        padding: 50px 30px 30px 30px;
+        padding: 50px 0px 30px 30px;
         li {
           display: flex;
           padding-bottom: 10px;
@@ -70,7 +71,7 @@
 
           span {
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             margin-left: 10px;
           }
@@ -92,9 +93,10 @@
 
           span {
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             margin-left: 10px;
+            width: 50%;
           }
 
           &:hover {
@@ -106,3 +108,113 @@
     }
   }
 }
+
+// Media queries
+
+@media (max-width: 992px) {
+  .about {
+    .wrapper {
+      .left {
+        .claim {
+          h1 {
+            font-size: 36px;
+            line-height: 46px;
+          }
+        }
+      }
+      .right {
+        .buttons {
+          .button {
+            span {
+              font-size: 14px;
+              width: 40%;
+            }
+          }
+          .button_alt {
+            span {
+              font-size: 14px;
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    .wrapper {
+      .left {
+        .claim {
+          h1 {
+            font-size: 26px;
+            line-height: 36px;
+          }
+        }
+      }
+      .right {
+        ul {
+          li {
+            .icon {
+              height: 15px;
+              width: 15px;
+              padding-top:5px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+        .buttons {
+          flex-direction: column;
+          height: 300px;
+          .button {
+            flex: 1;       
+            span {
+              font-size: 14px;
+            }
+          }
+          .button_alt {
+            flex: 1;
+            span {
+              font-size: 14px;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    .wrapper {
+      flex-direction: column;
+      .left {
+        flex: 1;
+        .claim {
+          padding-bottom: 0px;
+          text-align: center;
+        }
+      }
+      .right {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  .about {
+    .wrapper {
+      .right {
+        ul {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,6 +1,7 @@
 @import '../../styles/styles.scss';
 
 .portfolio {
+  min-height: 100vh;
   width: 100%;
   background-color: $background-grey;
   padding-bottom: 70px;
@@ -23,19 +24,21 @@
 
     .categories {
       display: flex;
-      margin-top: 20px;
+      margin-top: 30px;
+      padding: 0px;
     }
   }
 
   .list {
-    width: 90%;
+    padding: 0px 30px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 
     .project {
-      width: 30%;
-      margin: 20px 18px;
+      flex: 0 0 335px;
+      margin: 20px;
       background-color: white;
       box-shadow: 0px 0px 22px -3px rgba(66, 68, 90, 1);
 
@@ -127,6 +130,18 @@
             }
           }
 
+          .javascript_button {
+            background-color: #f0dc4e;
+            padding: 5px;
+            border-radius: 5px;
+            color: #2e302c;
+            margin-right: 5px;
+
+            span {
+              font-size: 12px;
+            }
+          }           
+
           .bootstrap_button {
             background-color: #563d7c;
             padding: 5px;
@@ -168,6 +183,69 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+// Media queries
+
+@media (max-width: 1200px) {
+  .portfolio {
+    .list {
+      justify-content: center;
+      .project {
+        flex: 0 0 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio {
+    .list {
+      .project {
+        flex: 0 0 310px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    .list {
+      .project {
+        flex: 0 0 235px;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio {
+    .header {
+      .categories {
+        padding: 0px 30px;
+        flex-wrap: wrap;
+      }
+    }
+    .list {
+      margin-top: 10px;
+      .project {
+        flex: 0 0 305px;
+        margin: 20px 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  .portfolio {
+    .list {
+      .project {
+        flex: 0 0 215px;
+        margin: 20px 0px;
       }
     }
   }

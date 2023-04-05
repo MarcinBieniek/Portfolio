@@ -12,8 +12,6 @@ const Portfolio = () => {
   console.log('selected is ', selected)
   console.log('filtered', filteredProjects)
 
-  
-
   useEffect(() => {
     setFilteredProjects(
       portfolio.filter(project => project.tag.includes(selected))
@@ -70,6 +68,11 @@ const Portfolio = () => {
                 { item.tag.includes('mongodb') &&
                   <div className={styles.mongodb_button}>
                     <span>MongoDB</span>
+                  </div>
+                }
+                { item.tag.includes('javascript') &&
+                  <div className={styles.javascript_button}>
+                    <span>JavaScript</span>
                   </div>
                 }
                 { item.tag.includes('bootstrap') &&

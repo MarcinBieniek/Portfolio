@@ -116,5 +116,15 @@
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    .wrapper {
+      .center {
+        display: none;
+      }
+    }
+  }
+}
+
 
 

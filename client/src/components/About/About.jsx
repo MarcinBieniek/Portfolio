@@ -21,7 +21,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>W 2021 roku postanowiłem od podstaw stworzyć spersonalizowany sklep internetowy. To był początek nowej drogi na której jestem teraz.</p>    
+              <p>In 2021, I've decided to create a personalized e-commerce service from scratch. This was the beginning of my new path.</p>    
             </li>
             <li>
               <img
@@ -29,8 +29,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>W grudniu 2022 roku ukończyłem intensywny 9-miesięczny bootcamp Full Stack Developer (900 godzin). Główne technologie to JavaScript, React, NodeJS, Express, MongoDB, Typescript, MySQL.
-</p>    
+              <p>I had an experience as PM on big IT projects (a new corporate service for the Polish National Football Federation). </p>    
             </li>
             <li>
               <img
@@ -38,7 +37,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Ukończyłem także 3 duże projekty zaliczeniowe, w tym projekt grupowy w ramach którego przez miesiąc tworzyliśmy serwis e-commerce, planując pracę w JIRA i pracując zespołowo w GITcie ( wykonując code review i mergując).</p>    
+              <p>In February 2023, I've completed an intense 10-month Full Stack Developer bootcamp. I went through the basics of JavaScript, React, NodeJS, Express, Mongo/SQL, and TypeScript. </p>    
             </li>
             <li>
               <img
@@ -46,7 +45,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Mam doświadczenie jako PM przy duzych projektach IT (nowy korporacyjny serwis dla PZPN).</p>    
+              <p>I've completed three final projects. One of them was an e-commerce group project. We've learned how to work as a team, plan work in Jira, and make code reviews/merge changes in Git.</p>    
             </li>
             <li>
               <img
@@ -54,7 +53,15 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Dziś jestem skoncentrowany na rozwijaniu moich umiejętności i znalezieniu pracy jako web developer. To dopiero początek, jest tak wiele do nauczenia.</p>    
+              <p>Each week, I met with my mentor for an hour of code review and pair programming. </p>    
+            </li>
+            <li>
+              <img
+                className={styles.icon}
+                src={`${process.env.PUBLIC_URL}/images/star.svg`} 
+                alt="Main image"
+              />
+              <p>Today I'm focused on developing my skills. There is so much to learn and discover.</p>    
             </li>
           </ul>
           
@@ -64,7 +71,7 @@ const About = () => {
               <span>See my profile</span>
             </a>
 
-            <a href="https://www.linkedin.com" className={styles.button_alt}>
+            <a href={`${process.env.PUBLIC_URL}/images/resume/cv.pdf`} className={styles.button_alt} download="MarcinBieniekCV">
               <CloudDownloadIcon className={styles.icon}/>
               <span>Download resume</span>
             </a>  
