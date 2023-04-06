@@ -95,7 +95,7 @@ const Portfolio = () => {
                     <span>View in browser</span>
                   }
                 </a>
-                <a href={item.github} className={styles.button}>
+                <a href={item.github} className={styles.button} target="_blank">
                   <span>Github</span>
                 </a>
               </div>
