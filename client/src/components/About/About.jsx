@@ -21,7 +21,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>In 2021, I've decided to create a personalized e-commerce service from scratch. This was the beginning of my new path.</p>    
+              <p>In 2021, I've decided to create a personalized e-commerce service from scratch.</p>    
             </li>
             <li>
               <img
@@ -29,7 +29,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>I had an experience as PM on big IT projects (a new corporate service for the Polish National Football Federation). </p>    
+              <p>Before that I had an experience as PM on big IT projects (a new corporate service for the <a href="https://pzpn.pl/">Polish National Football Federation).</a></p>    
             </li>
             <li>
               <img
