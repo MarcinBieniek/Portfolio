@@ -41,10 +41,9 @@ const Portfolio = () => {
       </div>
 
       <div className={styles.list}>
-
         { filteredProjects.map((item) => (
           <div className={styles.project}>
-            <a href={item.link} className={styles.image}>
+            <a href={item.link} className={styles.image} target="_blank">
               <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="" />
               {item.link === '' ?
                 <p>You are here</p>
@@ -87,8 +86,9 @@ const Portfolio = () => {
               </div>
               <h3>{item.title}</h3>
               <p><b>Details:</b> {item.details}</p>
+              
               <div className={styles.summary}>
-                <a href={item.link} className={styles.button}>
+                <a href={item.link} className={styles.button} target="_blank">
                   {item.link === '' ?
                     <span>You are here</span>
                     :
@@ -99,6 +99,7 @@ const Portfolio = () => {
                   <span>Github</span>
                 </a>
               </div>
+              
             </div>
           </div>
         ))}

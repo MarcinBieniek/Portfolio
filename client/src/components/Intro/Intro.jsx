@@ -18,13 +18,13 @@ const Intro = () => {
         <TerminalIcon className={styles.icon}/>
         <span className={styles.gray}>developer</span><br />
 
-        <span className={styles.gray}>learning</span>
+        <span className={styles.gray}>specialized</span>
         <img 
           className={styles.logo}
           src={`${process.env.PUBLIC_URL}/images/mern.png`} 
           alt="Mern logo"
         />
-        <span> Mern Stack</span><br />
+        <span> in Mern Stack</span><br />
       </div>
       
       <div className={styles.buttons}>

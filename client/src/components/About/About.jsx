@@ -29,7 +29,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Before that I had an experience as PM on big IT projects (a new corporate service for the <a href="https://pzpn.pl/">Polish National Football Federation).</a></p>    
+              <p>Before that I had an experience as PM on big IT projects (a new corporate service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation).</a></p>    
             </li>
             <li>
               <img
@@ -66,7 +66,7 @@ const About = () => {
           </ul>
           
           <div className={styles.buttons}>
-            <a href="https://www.linkedin.com/in/marcin-bieniek-617565271" className={styles.button}>
+            <a href="https://www.linkedin.com/in/marcin-bieniek-617565271" className={styles.button} target="_blank">
               <LinkedInIcon className={styles.icon}/>
               <span>See my profile</span>
             </a>
