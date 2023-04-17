@@ -33,14 +33,14 @@ const Contact = () => {
               <EmailIcon className={styles.icon}/>
               <div>
                 <h1>Message Me</h1>
-                <a href="mailto:hello@marcindev.com">hello@marcindev.com</a>
+                <a href="mailto:hello@marcindev.com">mbieniek.dev@gmail.com</a>
               </div>
             </div>
             <div className={styles.contact_box}>
               <EmailIcon className={styles.icon}/>
               <div>
                 <h1>Let's talk</h1>
-                <span>(+48) 694 943 167</span>
+                <a href="tel:(+48)694943167">(+48) 694 943 167</a>
               </div>
             </div>
           </div>
