@@ -14,17 +14,18 @@ const Intro = () => {
         />
         <span>Bieniek</span><br/>
         
-        <span>A junior web</span> 
-        <TerminalIcon className={styles.icon}/>
-        <span className={styles.gray}>developer</span><br />
-
-        <span className={styles.gray}>specialized</span>
-        <img 
+        <span>A junior </span> 
+                <img 
           className={styles.logo}
           src={`${process.env.PUBLIC_URL}/images/mern.png`} 
           alt="Mern logo"
         />
-        <span> in Mern Stack</span><br />
+        
+        <span className={styles.gray}>MERN stack</span><br />
+
+        <span className={styles.gray}>web</span>
+        <TerminalIcon className={styles.icon}/>
+        <span> developer</span><br />
       </div>
       
       <div className={styles.buttons}>

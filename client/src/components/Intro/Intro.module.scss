@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
 
   .text {
     width: 100%;
@@ -41,13 +40,13 @@
       margin: 0px;
       height: 70px;
       width: 80px;
-      margin: 0px 10px;
+      margin-left: 10px;
     }
 
     .logo {
       height: 70px;
       width: 80px;
-      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 
@@ -95,9 +94,8 @@
   }
 
   .arrow {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 20px;
+    margin-top: 40px;
+
     a {
       text-decoration: none;
       color:$black;

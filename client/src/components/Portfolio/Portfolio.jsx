@@ -48,7 +48,7 @@ const Portfolio = () => {
               {item.link === '' ?
                 <p>You are here</p>
                 :
-                <p>View in browser</p>
+                <p>Live demo</p>
               }
             </a>
             <div className={styles.content}>
@@ -92,7 +92,7 @@ const Portfolio = () => {
                   {item.link === '' ?
                     <span>You are here</span>
                     :
-                    <span>View in browser</span>
+                    <span>Live demo</span>
                   }
                 </a>
                 <a href={item.github} className={styles.button} target="_blank">

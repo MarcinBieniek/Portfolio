@@ -21,7 +21,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>In 2021, I've decided to create a personalized e-commerce service from scratch.</p>    
+              <p>In 2021, I've decided to create a personalized e-commerce service. </p>    
             </li>
             <li>
               <img
@@ -29,7 +29,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Before that I had an experience as PM on big IT projects (a new corporate service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation).</a></p>    
+              <p>Before that I had an experience as PM on big IT projects (like a new corporate service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation</a>). I worked also as a copywriter and SEO specialist.</p>    
             </li>
             <li>
               <img
@@ -37,7 +37,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>In February 2023, I've completed an intense 10-month Full Stack Developer bootcamp. I went through the basics of JavaScript, React, NodeJS, Express, Mongo/SQL, and TypeScript. </p>    
+              <p>In January 2023, I've completed 10-month Full Stack Developer bootcamp on Kodilla. I went through the basics of JavaScript, React, NodeJS, Express, Mongo/SQL, and TypeScript. </p>    
             </li>
             <li>
               <img
@@ -45,7 +45,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>I've completed three final projects. One of them was an e-commerce group project. We've learned how to work as a team, plan work in Jira, and make code reviews/merge changes in Git.</p>    
+              <p>I've completed three final projects. One of them was an e-commerce group project, lead by PM in Kanban methodology, with all aspects of commercial programing. </p>    
             </li>
             <li>
               <img
@@ -62,6 +62,14 @@ const About = () => {
                 alt="Main image"
               />
               <p>Today I'm focused on developing my skills. There is so much to learn and discover.</p>    
+            </li>
+            <li>
+              <img
+                className={styles.icon}
+                src={`${process.env.PUBLIC_URL}/images/star.svg`} 
+                alt="Main image"
+              />
+              <p>Currently im working on my first commercial project - lessons booking app for online school. Below you can find more details.</p>    
             </li>
           </ul>
           

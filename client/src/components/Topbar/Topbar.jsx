@@ -11,7 +11,7 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
         </div>
         <div className={styles.center}>
           <EmailIcon />
-          <a href="mailto:hello@marcindev.com">hello@marcindev.com</a>
+          <a href="mailto:mbieniek.dev@gmail.com">mbieniek.dev@gmail.com</a>
         </div>
         <div className={styles.right}>
           <div className={styles.hamburger} onClick={()=>setMenuOpen(!menuOpen)}>
