@@ -9,9 +9,6 @@ const Portfolio = () => {
   const [selected, setSelected] = useState('all')
   const [filteredProjects, setFilteredProjects] = useState([])
 
-  console.log('selected is ', selected)
-  console.log('filtered', filteredProjects)
-
   useEffect(() => {
     setFilteredProjects(
       portfolio.filter(project => project.tag.includes(selected))
@@ -43,14 +40,20 @@ const Portfolio = () => {
       <div className={styles.list}>
         { filteredProjects.map((item) => (
           <div className={styles.project}>
-            <a href={item.link} className={styles.image} target="_blank">
+            
+            {item.link ?
+              <a href={item.link} className={styles.image} target="_blank">
+                <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="" />
+                  <p>Live demo</p>
+                
+              </a>
+            :
+              <a href={item.github} className={styles.image} target="_blank">
               <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="" />
-              {item.link === '' ?
-                <p>You are here</p>
-                :
-                <p>Live demo</p>
-              }
-            </a>
+                <p>Go to Github</p>
+              </a>
+            }
+
             <div className={styles.content}>
               <div className={styles.buttons}>
                 { item.tag.includes('react') &&
@@ -83,18 +86,21 @@ const Portfolio = () => {
                     <span>Bootstrap</span>
                   </div>
                 }
+                { item.tag.includes('mysql') &&
+                  <div className={styles.mysql_button}>
+                    <span>MySQL</span>
+                  </div>
+                }
               </div>
               <h3>{item.title}</h3>
               <p><b>Details:</b> {item.details}</p>
               
               <div className={styles.summary}>
-                <a href={item.link} className={styles.button} target="_blank">
-                  {item.link === '' ?
-                    <span>You are here</span>
-                    :
+                  {item.link &&        
+                    <a href={item.link} className={styles.button} target="_blank">
                     <span>Live demo</span>
+                    </a>
                   }
-                </a>
                 <a href={item.github} className={styles.button} target="_blank">
                   <span>Github</span>
                 </a>

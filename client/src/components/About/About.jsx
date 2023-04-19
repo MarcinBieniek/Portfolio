@@ -2,7 +2,7 @@ import styles from './About.module.scss';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const About = () => {
   
   return (
@@ -21,7 +21,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>In 2021, I've decided to create a personalized e-commerce service. </p>    
+              <p>I had an experience as Project Manager on IT projects (new online service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation</a>). I worked also as a copywriter, specialized in SEO.</p>    
             </li>
             <li>
               <img
@@ -29,15 +29,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Before that I had an experience as PM on big IT projects (like a new corporate service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation</a>). I worked also as a copywriter and SEO specialist.</p>    
-            </li>
-            <li>
-              <img
-                className={styles.icon}
-                src={`${process.env.PUBLIC_URL}/images/star.svg`} 
-                alt="Main image"
-              />
-              <p>In January 2023, I've completed 10-month Full Stack Developer bootcamp on Kodilla. I went through the basics of JavaScript, React, NodeJS, Express, Mongo/SQL, and TypeScript. </p>    
+              <p>In January 2023, I've completed 10-month Full Stack Developer course on Kodilla. I went through the basics of JavaScript, React, NodeJS, Express, Mongo/SQL. </p>    
             </li>
             <li>
               <img
@@ -53,7 +45,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Each week, I met with my mentor for an hour of code review and pair programming. </p>    
+              <p>Each week, I met 1:1 with my mentor for an hour of code review and pair programming. </p>    
             </li>
             <li>
               <img
@@ -61,7 +53,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Today I'm focused on developing my skills. There is so much to learn and discover.</p>    
+              <p>Today I'm focused on developing my skills. In April 2023 I've started Vue Masterclass on vueschool.io. I'm also taking first steps in React Native.</p>    
             </li>
             <li>
               <img
@@ -79,10 +71,14 @@ const About = () => {
               <span>See my profile</span>
             </a>
 
-            <a href={`${process.env.PUBLIC_URL}/images/resume/cv.pdf`} className={styles.button_alt} download="MarcinBieniekCV">
-              <CloudDownloadIcon className={styles.icon}/>
-              <span>Download resume</span>
-            </a>  
+            <div className={styles.button_alt}>
+              <CloudDownloadIcon />
+              <span>Resume:</span>
+              <div className={styles.languages}>
+                <a href={`${process.env.PUBLIC_URL}/images/resume/CV-MarcinBieniek-en.pdf`}  download="MarcinBieniekCV">ENG</a>
+                <a href={`${process.env.PUBLIC_URL}/images/resume/CV-MarcinBieniek-pl.pdf`}  download="MarcinBieniekCV">PL</a>
+              </div>
+            </div>  
 
             <a href="#portfolio" className={styles.button}>
               <RemoveRedEyeIcon className={styles.icon}/>

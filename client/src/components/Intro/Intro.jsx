@@ -21,7 +21,7 @@ const Intro = () => {
           alt="Mern logo"
         />
         
-        <span className={styles.gray}>MERN stack</span><br />
+        <span className={styles.gray}>full-stack</span><br />
 
         <span className={styles.gray}>web</span>
         <TerminalIcon className={styles.icon}/>

@@ -27,11 +27,23 @@ export const categories = [
     id: "bootstrap",
     title: "Bootstrap",
   },
+  {
+    id: "mysql",
+    title: "MySQL",
+  },
 ];
 
 export const portfolio = [
   {
     id: 1,
+    tag: ['all', 'react', 'nodejs', 'express', 'mysql'],
+    title: 'Booking calendar (in progress)',
+    details: 'Personalized calendar for online school. Frontend React, backed Express / MySQL.',
+    img: '/images/portfolio/calendar.png',
+    github: 'https://github.com/odevpl/kodillameet'
+  },
+  {
+    id: 2,
     tag: ['all', 'react', 'nodejs', 'express', 'mongodb', 'bootstrap'],
     title: 'E-commerce full-stack app',
     details: 'User registration/login and profile. Product personalization, cart, order process. Orders history.',
@@ -40,30 +52,37 @@ export const portfolio = [
     github: 'https://github.com/MarcinBieniek/ProsperoStore'
   },
   {
-    id: 2,
+    id: 3,
     tag: ['all', 'react', 'nodejs', 'express', 'mongodb', 'bootstrap'],
     title: 'Real estates full-stack app',
-    details: 'Web integrated with interactive map. User canegister/login and perform CRUD operations on offers.',
+    details: 'Web integrated with interactive map API. User can register/login and perform CRUD operations on offers.',
     img: '/images/portfolio/realestate.png',
     link: 'https://realestate-mb.herokuapp.com/',
     github: 'https://github.com/MarcinBieniek/Fullstack-NoticeBoard'
   },
   {
-    id: 3,
+    id: 4,
     tag: ['all', 'react'],
-    title: 'Portfolio web',
-    details: 'Single page porfolio web with snap-scroll effect. Categories filter, contact form. ',
+    title: 'Portfolio web (this site)',
+    details: 'Single page porfolio web with snap-scroll effect. Categories filter, contact form.',
     img: '/images/portfolio/portfolio.png',
-    link: '',
     github: 'https://github.com/MarcinBieniek/Portfolio'
   },
   {
-    id: 4,
+    id: 5,
     tag: ['all', 'javascript'],
     title: 'Simple streaming service',
     details: 'VanillaJS. Streaming service with audio player, songs list, search page and song draw page.',
     img: '/images/portfolio/streaming.png',
     link: 'https://streaming-service.herokuapp.com/',
     github: 'https://github.com/MarcinBieniek/SimpleStreamingService'
+  },
+  {
+    id: 6,
+    tag: ['all', 'react', 'bootstrap'],
+    title: 'Group project',
+    details: 'E-commerce group project, lead by PM in Kanban methodology. Git workflow (code rev, merge).',
+    img: '/images/portfolio/bazaar.png',
+    github: 'https://github.com/MarcinBieniek/wdp-2208-01'
   },
 ] 

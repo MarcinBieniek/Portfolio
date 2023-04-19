@@ -13,7 +13,7 @@ const Contact = () => {
     setSend(true)
     setTimeout(() => {
       setSend(false)
-         }, 5000);
+         }, 2000);
   }, [state.submitting])
 
   return (
