@@ -37,7 +37,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>I've completed three final projects. One of them was an e-commerce group project, lead by PM in Kanban methodology, with all aspects of commercial programing. </p>    
+              <p>I've completed three final projects. One of them was an e-commerce group project, led by PM in Kanban methodology, with all aspects of commercial programing. </p>    
             </li>
             <li>
               <img
