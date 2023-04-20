@@ -21,7 +21,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>I had an experience as Project Manager on IT projects (new online service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation</a>). I worked also as a copywriter, specialized in SEO.</p>    
+              <p>I had experience as a project manager on IT projects (new online service for the <a href="https://pzpn.pl/" target="_blank">Polish National Football Federation</a>). I worked also as a copywriter, specializing in SEO.</p>    
             </li>
             <li>
               <img
