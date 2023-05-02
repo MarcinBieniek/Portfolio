@@ -53,7 +53,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>Today I'm focused on developing my skills. In April 2023 I've started Vue Masterclass on vueschool.io. I'm also taking first steps in React Native.</p>    
+              <p>Today I'm focused on developing my skills in TypeScript, React and Vue. In April 2023 I've started Vue Masterclass on vueschool.io.</p>    
             </li>
             <li>
               <img
