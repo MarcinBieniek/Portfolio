@@ -29,7 +29,7 @@ const About = () => {
                 src={`${process.env.PUBLIC_URL}/images/star.svg`} 
                 alt="Main image"
               />
-              <p>In January 2023, I've completed 10-month Full Stack Developer course on Kodilla. I went through the basics of JavaScript, React, NodeJS, Express, Mongo/SQL. </p>    
+              <p>In January 2023, I've completed 10-month Full Stack Developer course on Kodilla. I've learnt JavaScript, React, NodeJS, Express, Mongo/SQL and TypeScript. </p>    
             </li>
             <li>
               <img
