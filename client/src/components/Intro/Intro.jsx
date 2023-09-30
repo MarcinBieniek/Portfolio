@@ -9,25 +9,29 @@ const Intro = () => {
         <span className={styles.gray}>I'm Marcin</span>
         <img
           className={styles.foto}
-          src={`${process.env.PUBLIC_URL}/images/marcin.jpeg`} 
+          src={`${process.env.PUBLIC_URL}/images/marcin2.png`}
           alt="Main image"
         />
         <span>Bieniek</span><br/>
-        
-        <span>A junior </span> 
-                <img 
+
+        <span>A junior </span>
+        <img
           className={styles.logo}
-          src={`${process.env.PUBLIC_URL}/images/mern.png`} 
-          alt="Mern logo"
+          src={`${process.env.PUBLIC_URL}/images/vue-logo.png`}
+          alt="Vue logo"
         />
-        
+        <img
+          className={styles.logo}
+          src={`${process.env.PUBLIC_URL}/images/react.png`}
+          alt="React logo"
+        />
         <span className={styles.gray}>Front-end</span><br />
 
         <span className={styles.gray}>web</span>
         <TerminalIcon className={styles.icon}/>
         <span> developer</span><br />
       </div>
-      
+
       <div className={styles.buttons}>
         <a href="#about" className={styles.button1}>
           <div >About me</div>

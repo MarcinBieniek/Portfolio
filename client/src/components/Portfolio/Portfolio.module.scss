@@ -63,7 +63,7 @@
 
         &:hover {
           background-color: $black;
-          
+
           img {
             opacity: 0.4;
             z-index: 0;
@@ -72,7 +72,7 @@
           p {
             display: block;
           }
-        }     
+        }
       }
 
       .content {
@@ -95,11 +95,11 @@
             }
           }
 
-          .nodejs_button {
-            background-color: #46483d;
+          .vue_button {
+            background-color: #41b883;
             padding: 5px;
             border-radius: 5px;
-            color: #81cf08;
+            color: #35495e;
             margin-right: 5px;
 
             span {
@@ -107,11 +107,11 @@
             }
           }
 
-          .express_button {
-            background-color: #f0db4f;
+          .nextjs_button {
+            background-color: #f4f5f5;
             padding: 5px;
             border-radius: 5px;
-            color: #323330;
+            color: #141414;
             margin-right: 5px;
 
             span {
@@ -119,11 +119,11 @@
             }
           }
 
-          .mongodb_button {
-            background-color: #52ac43;
+          .nuxtjs_button {
+            background-color: #f4f5f5;
             padding: 5px;
             border-radius: 5px;
-            color: #462e23;
+            color: #2d475c;
             margin-right: 5px;
 
             span {
@@ -141,7 +141,7 @@
             span {
               font-size: 12px;
             }
-          }           
+          }
 
           .bootstrap_button {
             background-color: #563d7c;
@@ -153,19 +153,31 @@
             span {
               font-size: 12px;
             }
-          }    
-          
-          .mysql_button {
-            background-color: #e48e00;
+          }
+
+          .typescript_button {
+            background-color: #2d79c7;
             padding: 5px;
             border-radius: 5px;
-            color: #00618a;
+            color: white;
             margin-right: 5px;
 
             span {
               font-size: 12px;
             }
-          }   
+          }
+
+          .tailwind_button {
+            background-color: #07b6d4;
+            padding: 5px;
+            border-radius: 5px;
+            color: black;
+            margin-right: 5px;
+
+            span {
+              font-size: 12px;
+            }
+          }
         }
 
         h3 {
@@ -176,7 +188,7 @@
           display: flex;
           justify-content: space-between;
           margin-top: 10px;
-          
+
           .button {
             background-color: $black;
             padding: 5px 10px;
