@@ -41,6 +41,7 @@
       margin: 20px;
       background-color: white;
       box-shadow: 0px 0px 22px -3px rgba(66, 68, 90, 1);
+      position: relative;
 
       .image {
         position: relative;
@@ -53,7 +54,6 @@
         img {
           object-fit: cover;
           max-width: 100%;
-
         }
 
         p  {
@@ -77,11 +77,11 @@
 
       .content {
         padding: 10px;
-        position: relative;
+        height: 210px;
 
         .buttons {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-start;
 
           .react_button {
             background-color: #1c2c4c;
@@ -91,7 +91,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -103,7 +103,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -115,7 +115,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -127,7 +127,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -139,7 +139,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -151,7 +151,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -163,7 +163,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
@@ -175,7 +175,7 @@
             margin-right: 5px;
 
             span {
-              font-size: 12px;
+              font-size: 14px;
             }
           }
         }
@@ -184,26 +184,29 @@
           padding: 10px 0px;
         }
 
-        .summary {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 10px;
 
-          .button {
-            background-color: $black;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-right: 5px;
-            color: white;
-            text-decoration: none;
+      }
 
-            span {
-              font-size: 14px;
-            }
+      .summary {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        margin: 10px;
 
-            &:hover {
-              color: $font-gray;
-            }
+        .button {
+          background-color: $black;
+          padding: 5px 10px;
+          border-radius: 5px;
+          margin-right: 5px;
+          color: white;
+          text-decoration: none;
+
+          span {
+            font-size: 14px;
+          }
+
+          &:hover {
+            color: $font-gray;
           }
         }
       }
@@ -229,6 +232,9 @@
     .list {
       .project {
         flex: 0 0 310px;
+        .content {
+          height: 250px;
+        }
       }
     }
   }
@@ -240,6 +246,9 @@
       .project {
         flex: 0 0 235px;
         margin: 10px;
+        .content {
+          height: 300px;
+        }
       }
     }
   }

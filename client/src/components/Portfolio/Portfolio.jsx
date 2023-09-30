@@ -55,6 +55,7 @@ const Portfolio = () => {
             }
 
             <div className={styles.content}>
+
               <div className={styles.buttons}>
                 { item.tag.includes('react') &&
                   <div className={styles.react_button}>
@@ -100,7 +101,9 @@ const Portfolio = () => {
               <h3>{item.title}</h3>
               <p><b>Details:</b> {item.details}</p>
 
-              <div className={styles.summary}>
+            </div>
+
+            <div className={styles.summary}>
                   {item.link &&
                     <a href={item.link} className={styles.button} target="_blank">
                     <span>Live demo</span>
@@ -110,8 +113,6 @@ const Portfolio = () => {
                   <span>Github</span>
                 </a>
               </div>
-
-            </div>
           </div>
         ))}
       </div>
