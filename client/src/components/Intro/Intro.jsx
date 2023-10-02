@@ -9,7 +9,7 @@ const Intro = () => {
         <span className={styles.gray}>I'm Marcin</span>
         <img
           className={styles.foto}
-          src={`${process.env.PUBLIC_URL}/images/marcin2.png`}
+          src={`${process.env.PUBLIC_URL}/images/marcin.png`}
           alt="Main image"
         />
         <span>Bieniek</span><br/>

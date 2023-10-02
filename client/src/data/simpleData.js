@@ -40,8 +40,8 @@ export const categories = [
 export const portfolio = [
   {
     id: 1,
-    tag: ['all', 'nextjs', 'typescript', 'full-stack', 'tailwind'],
-    title: 'Next.js - Dribble clone',
+    tag: ['all', 'react', 'nextjs', 'typescript', 'tailwind'],
+    title: 'Next.js full-stack - Dribble clone',
     details: 'Project created in React Next 13 and Typescript. Inspired by the dribble portal. Allows authorization (Grafbase) as well as adding (with files), editing and deleting projects. Styling in Tailwind.',
     img: '/images/portfolio/dribble.png',
     link: 'https://react-next-js-dribble-clone.vercel.app',
