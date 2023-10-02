@@ -61,7 +61,7 @@ export const portfolio = [
     id: 3,
     tag: ['all', 'react', 'full-stack'],
     title: 'React full-stack - E-commerce',
-    created: '01/2022',
+    created: '12/2022',
     details: 'Project created 100% from scratch (own idea and graphics). User registration/login and profile. Product personalization, cart, order process. Orders history.',
     img: '/images/portfolio/prospero.png',
     link: 'https://prospero-store.herokuapp.com/',
