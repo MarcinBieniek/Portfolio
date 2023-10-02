@@ -77,7 +77,7 @@
 
       .content {
         padding: 10px;
-        height: 210px;
+        height: 230px;
 
         .buttons {
           display: flex;
@@ -181,7 +181,11 @@
         }
 
         h3 {
-          padding: 10px 0px;
+          padding: 5px 0px;
+        }
+
+        p {
+          padding: 2px 0px;
         }
 
 
@@ -233,7 +237,7 @@
       .project {
         flex: 0 0 310px;
         .content {
-          height: 250px;
+          height: 270px;
         }
       }
     }
@@ -247,7 +251,7 @@
         flex: 0 0 235px;
         margin: 10px;
         .content {
-          height: 300px;
+          height: 330px;
         }
       }
     }

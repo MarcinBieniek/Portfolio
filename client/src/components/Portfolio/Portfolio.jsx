@@ -99,16 +99,19 @@ const Portfolio = () => {
                 }
               </div>
               <h3>{item.title}</h3>
+              <p><b>Created:</b> {item.created}</p>
               <p><b>Details:</b> {item.details}</p>
 
             </div>
 
+
+
             <div className={styles.summary}>
-                  {item.link &&
-                    <a href={item.link} className={styles.button} target="_blank">
+                {item.link &&
+                  <a href={item.link} className={styles.button} target="_blank">
                     <span>Live demo</span>
-                    </a>
-                  }
+                  </a>
+                }
                 <a href={item.github} className={styles.button} target="_blank">
                   <span>Github</span>
                 </a>
