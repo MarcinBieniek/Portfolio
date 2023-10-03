@@ -68,8 +68,8 @@ const About = () => {
               <CloudDownloadIcon />
               <span>Resume:</span>
               <div className={styles.languages}>
-                <a href={`${process.env.PUBLIC_URL}/images/resume/CV-MarcinBieniek-en.pdf`}  download="MarcinBieniekCV">ENG</a>
-                <a href={`${process.env.PUBLIC_URL}/images/resume/CV-MarcinBieniek-pl.pdf`}  download="MarcinBieniekCV">PL</a>
+                <a href={`${process.env.PUBLIC_URL}/images/resume/Marcin-Bieniek-CV-eng-102023.pdf`}  download="MarcinBieniekCV">ENG</a>
+                <a href={`${process.env.PUBLIC_URL}/images/resume/Marcin-Bieniek-CV-pl-102023.pdf`}  download="MarcinBieniekCV">PL</a>
               </div>
             </div>
 
