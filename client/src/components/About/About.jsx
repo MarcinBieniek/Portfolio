@@ -12,10 +12,10 @@ const About = () => {
         <div className={styles.left}>
           <div className={styles.claim}>
             <h1 className={styles.lead}>My skills:</h1>
-            <p><b>Vue:</b> Nuxt.js 3, TypeScript, Vue 2 & 3, Pinia, VueUse</p>
-            <p><b>React:</b> Next.js, TypeScript, Redux, ContexAPI</p>
+            <p><b>Vue:</b> Nuxt.js 3, Vue 2 & 3, Pinia, VueUse, TypeScript</p>
+            <p><b>React:</b> Next.js, Redux, ContexAPI, TypeScript</p>
             <p><b>Style:</b> CSS, SCSS, Tailwind, libraries (MaterialUI, SemanticUI, Bootstrap, AnimateCSS and more)</p>
-            <p><b>Backend:</b> NodeJS, Express, MongoDB, Grafbase</p>
+            <p><b>Backend:</b> NodeJS, Express, MongoDB, MySQL, REST API, Grafbase</p>
             <p><b>Others:</b> Git (conventional commits), Bitbucket, Jira, Cloudinary, Netlify, Heroku, Vercel, Postman</p>
           </div>
         </div>
